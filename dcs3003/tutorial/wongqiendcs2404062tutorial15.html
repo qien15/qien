@@ -1,0 +1,26 @@
+<html>
+<head><title>JavaScript</title>
+<link rel=icon href=aa.jpg type=image/jpg>
+<meta name=viewport content=width=device-width, initial-scale=1.0>
+
+<script>
+	function changeImage(src){
+		document.getElementById("myImage").src=src;
+	}
+
+</script>
+</head>
+<body>
+
+<h1> Change Inline JavaScript to Internal JavaScript </h1>
+
+<h3 id="change"> Using JavaScript to change an HTML element - IMG. </h3>
+
+<button onclick="changeImage('faster.gif')"> Faster </button>
+
+<img id="myImage" src="image.gif" style="width:100px">
+
+<button onclick="changeImage('image.gif')"> Normal </button>
+
+</body>
+</html>

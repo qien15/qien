@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Table</title>
+<link rel="icon" href="aa.jpg" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+margin-top: 20px;
+margin-left: 50px;
+}
+</style>
+<script>
+function handleClickRow1Col1() {
+alert("You clicked on Row 1, Column 1!");
+}
+
+function handleMouseOverRow1Col2() {
+alert("Mouse is over Row 1, Column 2");
+}
+
+function handleDblClickRow1Col3() {
+alert("You double-clicked on Row 1, Column 3!");
+}
+
+function handleClickRow1Col4(element) {
+element.style.backgroundImage = "url('aa.jpg')";
+element.style.backgroundSize = "cover"; 
+alert("Background changed to aa.jpg!");
+}
+</script>
+</head>
+<body>
+
+<table border="3" width="50%" height="50%">
+<caption>My First Web Table</caption>
+<tr>
+<th>Header One</th>
+<th>Header Two</th>
+<th>Header Three</th>
+<th>Header Four</th>
+</tr>
+
+<tr>
+<td onclick="handleClickRow1Col1()">Data row1-col1</td>
+<td onmouseover="handleMouseOverRow1Col2()">Data row1-col2</td>
+<td ondblclick="handleDblClickRow1Col3()">Data row1-col3</td>
+<td onclick="handleClickRow1Col4(this)">Data row1-col4</td>
+</tr>
+
+<tr>
+<td>Data row2-col1</td>
+<td>Data row2-col2</td>
+<td>Data row2-col3</td>
+<td>Data row2-col4</td>
+</tr>
+</table>
+
+</body>
+</html>
+
